@@ -1,0 +1,15 @@
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\DevNexus.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\DevNexus.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\DevNexus.Infrastructure.AssemblyInfo.cs
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\DevNexus.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\DevNexus.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\bin\Debug\net8.0\DevNexus.Infrastructure.deps.json
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\bin\Debug\net8.0\DevNexus.Infrastructure.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\bin\Debug\net8.0\DevNexus.Infrastructure.pdb
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\bin\Debug\net8.0\DevNexus.Domain.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\bin\Debug\net8.0\DevNexus.Domain.pdb
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\DevNexus.9FCA19F2.Up2Date
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\DevNexus.Infrastructure.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\refint\DevNexus.Infrastructure.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\DevNexus.Infrastructure.pdb
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Infrastructure\obj\Debug\net8.0\ref\DevNexus.Infrastructure.dll

@@ -1,0 +1,11 @@
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\obj\Debug\net8.0\DevNexus.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\obj\Debug\net8.0\DevNexus.Domain.AssemblyInfoInputs.cache
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\obj\Debug\net8.0\DevNexus.Domain.AssemblyInfo.cs
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\obj\Debug\net8.0\DevNexus.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\bin\Debug\net8.0\DevNexus.Domain.deps.json
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\bin\Debug\net8.0\DevNexus.Domain.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\bin\Debug\net8.0\DevNexus.Domain.pdb
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\obj\Debug\net8.0\DevNexus.Domain.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\obj\Debug\net8.0\refint\DevNexus.Domain.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\obj\Debug\net8.0\DevNexus.Domain.pdb
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Domain\obj\Debug\net8.0\ref\DevNexus.Domain.dll

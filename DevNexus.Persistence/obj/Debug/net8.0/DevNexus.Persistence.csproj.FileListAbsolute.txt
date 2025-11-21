@@ -1,0 +1,15 @@
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\DevNexus.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\DevNexus.Persistence.AssemblyInfoInputs.cache
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\DevNexus.Persistence.AssemblyInfo.cs
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\DevNexus.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\DevNexus.Persistence.csproj.AssemblyReference.cache
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\bin\Debug\net8.0\DevNexus.Persistence.deps.json
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\bin\Debug\net8.0\DevNexus.Persistence.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\bin\Debug\net8.0\DevNexus.Persistence.pdb
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\bin\Debug\net8.0\DevNexus.Domain.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\bin\Debug\net8.0\DevNexus.Domain.pdb
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\DevNexus.3D636496.Up2Date
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\DevNexus.Persistence.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\refint\DevNexus.Persistence.dll
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\DevNexus.Persistence.pdb
+C:\Users\pmiralamov\source\repos\DevNexus\DevNexus.Persistence\obj\Debug\net8.0\ref\DevNexus.Persistence.dll
