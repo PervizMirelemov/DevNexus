@@ -1,12 +1,10 @@
 using DevNexus.Domain.Entities;
 using DevNexus.Domain.Entities.Identity;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DevNexus.Persistence.Contexts;
 
-public class AppDbContext : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid>
+public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 

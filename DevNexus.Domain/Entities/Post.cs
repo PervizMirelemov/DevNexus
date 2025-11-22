@@ -10,6 +10,10 @@ public class Post : Entity<int>
     public int Views { get; set; }
     public int CategoryId { get; set; }
 
+    public string TitleAz { get; set; }
+    public string TitleEn { get; set; }
+    public string TitleRu { get; set; }
+
     // Navigation
     public Category? Category { get; set; }
     public ICollection<PostTranslation>? Translations { get; set; }

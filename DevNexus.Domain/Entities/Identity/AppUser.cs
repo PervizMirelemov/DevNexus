@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Identity;
+using DevNexus.Domain.Common;
 
 namespace DevNexus.Domain.Entities.Identity;
 
-public class AppUser : IdentityUser<Guid>
+public class AppUser : Entity<Guid>
 {
     public string FullName { get; set; } = string.Empty;
 }

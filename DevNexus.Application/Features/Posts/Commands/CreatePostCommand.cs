@@ -1,12 +1,10 @@
-using System.Linq;
-using System.Collections.Generic;
 using DevNexus.Domain.Entities;
 using DevNexus.Domain.Enums;
-using DevNexus.Persistence.Repositories;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using DevNexus.Infrastructure.Storage;
+using DevNexus.Persistence.Contexts;
 
 namespace DevNexus.Application.Features.Posts.Commands;
 
@@ -15,7 +13,7 @@ public record TranslationDto(string Title, string Content, Lang Lang);
 public record CreatePostCommand(IFormFile ImageFile, int CategoryId, List<TranslationDto> Translations) : IRequest<int>;
 
 public class CreatePostCommandHandler(
-    IWriteRepository<Post, int> _repository,
+    AppDbContext _context,
     IFormFileStorage _fileStorage
 ) : IRequestHandler<CreatePostCommand, int>
 {
@@ -37,8 +35,8 @@ public class CreatePostCommandHandler(
             }).ToList()
         };
 
-        await _repository.CreateAsync(post);
-        await _repository.SaveChangesAsync();
+        await _context.Posts.AddAsync(post, cancellationToken);
+        await _context.SaveChangesAsync(cancellationToken);
 
         return post.Id;
     }
