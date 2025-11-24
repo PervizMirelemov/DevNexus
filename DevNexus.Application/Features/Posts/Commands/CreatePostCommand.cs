@@ -1,10 +1,10 @@
 using DevNexus.Domain.Entities;
 using DevNexus.Domain.Enums;
+using DevNexus.Application.Contexts;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Http;
-using DevNexus.Infrastructure.Storage;
-using DevNexus.Persistence.Contexts;
+using DevNexus.Application.Storage;
 
 namespace DevNexus.Application.Features.Posts.Commands;
 
@@ -19,7 +19,7 @@ public class CreatePostCommandHandler(
 {
     public async Task<int> Handle(CreatePostCommand request, CancellationToken cancellationToken)
     {
-        var imagePath = await _fileStorage.UploadAsync("post-images", request.ImageFile, cancellationToken);
+        var imagePath = await _fileStorage.UploadAsync("post-images", request.ImageFile);
 
         var post = new Post
         {

@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddPersistenceLayer(builder.Configuration);
-builder.Services.AddApplicationLayer();
 builder.Services.AddInfrastructureLayer(builder.Configuration);
+builder.Services.AddApplicationLayer();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -16,6 +16,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    // Set the maximum request body size to 10 MB
+    serverOptions.Limits.MaxRequestBodySize = 10 * 1024 * 1024; // 10 MB
 });
 
 var app = builder.Build();

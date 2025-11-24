@@ -2,6 +2,6 @@
   <Project Path="DevNexus.Application/DevNexus.Application.csproj" Id="778b78e8-f8ff-4046-94a1-d7abac6a3464" />
   <Project Path="DevNexus.Domain/DevNexus.Domain.csproj" Id="00b6dbfe-f9de-409f-ac15-1cc776c523ef" />
   <Project Path="DevNexus.Infrastructure/DevNexus.Infrastructure.csproj" Id="36127281-f893-4923-accd-59687f89db53" />
-  <Project Path="DevNexus.Persistence/DevNexus.Persistence.csproj" Id="0e1b8a94-9c70-4646-a299-57a0a074983e" />
+  <Project Path="DevNexus.Persistence/DevNexus.Persistence.csproj" />
   <Project Path="DevNexus/DevNexus.Api.csproj" />
 </Solution>

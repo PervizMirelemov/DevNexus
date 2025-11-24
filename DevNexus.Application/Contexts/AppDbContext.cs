@@ -2,7 +2,7 @@ using DevNexus.Domain.Entities;
 using DevNexus.Domain.Entities.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace DevNexus.Persistence.Contexts;
+namespace DevNexus.Application.Contexts;
 
 public class AppDbContext : DbContext
 {

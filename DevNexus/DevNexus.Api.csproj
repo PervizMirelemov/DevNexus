@@ -6,12 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="GraphQL\**" />
-    <Content Remove="GraphQL\**" />
-    <EmbeddedResource Remove="GraphQL\**" />
-    <None Remove="GraphQL\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
@@ -22,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DevNexus.Domain\DevNexus.Domain.csproj" />
     <ProjectReference Include="..\DevNexus.Application\DevNexus.Application.csproj" />
     <ProjectReference Include="..\DevNexus.Persistence\DevNexus.Persistence.csproj" />
     <ProjectReference Include="..\DevNexus.Infrastructure\DevNexus.Infrastructure.csproj" />

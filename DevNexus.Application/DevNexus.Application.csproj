@@ -8,18 +8,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DevNexus.Domain\DevNexus.Domain.csproj" />
-    <ProjectReference Include="..\DevNexus.Persistence\DevNexus.Persistence.csproj" />
-    <ProjectReference Include="..\DevNexus.Infrastructure\DevNexus.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="FluentValidation" Version="11.5.1" />
+	<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0-rc.1.23452.6" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
