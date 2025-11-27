@@ -1,33 +1,41 @@
+// Add this using to reference the interface from Application layer
+using DevNexus.Application.Storage;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using System.Threading;
 
 namespace DevNexus.Infrastructure.Storage;
 
-public class LocalFileStorage : IFormFileStorage
+public class LocalFileStorage(IWebHostEnvironment environment) : IStorage
 {
-    private readonly IWebHostEnvironment _env;
+    private readonly string _webRootPath = environment.WebRootPath; // wwwroot path
 
-    public LocalFileStorage(IWebHostEnvironment env)
+    public Task<string> UploadAsync(string group, string fileName, Stream stream)
     {
-        _env = env;
+        string folder = Path.Combine(_webRootPath, group);
+        Directory.CreateDirectory(folder);
+
+        fileName = IStorage.GenerateUniqueFileName(fileName);
+        string path = Path.Combine(folder, fileName); // wwwroot/group/20230417234539-c21459efd42a78gf.ext
+        using FileStream fileStream = new(path, FileMode.Create, FileAccess.Write);
+        stream.CopyTo(fileStream);
+
+        string dbPath = Path.Combine(group, fileName).Replace("\\", "/"); // group/20230417234539-c21459efd42a78gf.ext
+        return Task.FromResult(dbPath);
     }
 
-    public async Task<string> UploadAsync(string folder, IFormFile file, CancellationToken cancellationToken = default)
+    public Task<byte[]> DownloadAsBytesAsync(string path)
     {
-        var wwwRoot = Path.Combine(_env.ContentRootPath, "wwwroot");
-        var targetDir = Path.Combine(wwwRoot, folder);
+        string filePath = Path.Combine(_webRootPath, path);
+        if (File.Exists(filePath))
+            return File.ReadAllBytesAsync(filePath);
 
-        if (!Directory.Exists(targetDir))
-            Directory.CreateDirectory(targetDir);
+        return Task.FromResult(Array.Empty<byte>());
+    }
 
-        var fileName = $"{Guid.NewGuid():N}{Path.GetExtension(file.FileName)}";
-        var filePath = Path.Combine(targetDir, fileName);
-
-        await using var stream = new FileStream(filePath, FileMode.Create);
-        await file.CopyToAsync(stream, cancellationToken);
-
-        var relativePath = Path.Combine(folder, fileName).Replace("\\", "/");
-        return "/" + relativePath;
+    public Task DeleteAsync(string path)
+    {
+        string filePath = Path.Combine(_webRootPath, path);
+        if (File.Exists(filePath))
+            File.Delete(filePath);
+        return Task.CompletedTask;
     }
 }
